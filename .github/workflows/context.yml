@@ -19,7 +19,7 @@ jobs:
           echo "Event Name: $GITHUB_EVENT"
         env:
           MY_REPOSITORY: ${{ github.repository }}
-          GITHUB_EVENT: ${{ guthub.event_name }}
+          GITHUB_EVENT: ${{ github.event_name }}
 
 
       
