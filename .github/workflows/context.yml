@@ -1,6 +1,6 @@
 name: Context Examples
 
-on: [push]
+on: ['push']
 
 jobs:
   my_context:
