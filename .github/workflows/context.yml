@@ -7,7 +7,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: "1st step"
-        runs: |
+        run: |
           echo "Action! $MY_ACTION"
           echo "Actor! $MY_ACTOR"
         env:
