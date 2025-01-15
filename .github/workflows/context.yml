@@ -1,15 +1,23 @@
-name: Context-Examples
+name: Context-Example
 
 on: ['push']
 
 jobs:
   my_context:
-    runs-on: ubuntu_latest
+    runs-on: ubuntu-latest
     steps:
-      - name: "My 1st context"
-        run: |
+      - name: "1st step"
+        runs: |
           echo "Action! $MY_ACTION"
           echo "Actor! $MY_ACTOR"
         env:
           MY_ACTION: ${{ github.action }}
           MY_ACTOR: ${{ github.actor }}
+
+
+
+
+
+
+
+
