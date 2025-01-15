@@ -1,0 +1,32 @@
+name: Context Example
+
+on: ['push']
+
+jobs:
+  my_context:
+    runs-on: ubuntu-latest
+    steps:
+      - name: "1st step"
+        run: |
+          echo "Action! $MY_ACTION"
+          echo "Actor! $MY_ACTOR"
+        env:
+          MY_ACTION: ${{ github.action }}
+          MY_ACTOR: ${{ github.actor }}
+      - name: "Display repository info"
+        run: |
+          echo "Repository Name: $MY_REPOSITORY"
+          echo "Event Name: $GITHUB_EVENT"
+        env:
+          MY_REPOSITORY: ${{ github.repository }}
+          GITHUB_EVENT: ${{ github.event_name }}
+
+
+      
+
+
+
+
+
+
+
