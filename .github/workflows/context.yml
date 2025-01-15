@@ -13,7 +13,16 @@ jobs:
         env:
           MY_ACTION: ${{ github.action }}
           MY_ACTOR: ${{ github.actor }}
+      - name: "Display repository info"
+        run: |
+          echo "Repository Name: $MY_REPOSITORY"
+          echo "Event Name: $GITHUB_EVENT"
+        env:
+          MY_REPOSITORY: ${{ github.repository }}
+          GITHUB_EVENT: ${{ guthub.event_name }}
 
+
+      
 
 
 
