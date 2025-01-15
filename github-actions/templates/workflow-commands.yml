@@ -10,14 +10,6 @@ jobs:
          echo "::group:: My Group Message"
          echo "hello group members"
          echo "this is my 1st test of workflow commands"
-         echo "::endgroup::"
-      - name: "step 1"
-        run: |
-         echo "MY_VAL=hello this is another test" >> $GITHUB_ENV
-         
-      - name: "step 2"
-        run: |
-         echo $MY_VAL
-         
+         echo "::end group::"
 
 
